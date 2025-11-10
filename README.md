@@ -32,7 +32,7 @@ All generated files are in the `output/` directory:
 ## 📋 Prerequisites
 
 - Python >=3.10 <3.13
-- OpenAI API key
+- Anthropic API key (or OpenAI API key)
 - [UV](https://docs.astral.sh/uv/) package manager (optional but recommended)
 
 ## 🔧 Installation
@@ -61,8 +61,14 @@ pip install crewai crewai-tools gradio
 
 Create a `.env` file in the project root:
 ```bash
+# For Anthropic (Claude)
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# Or for OpenAI
 OPENAI_API_KEY=your_openai_api_key_here
 ```
+
+> **Note**: CrewAI supports multiple LLM providers. This project works with both Anthropic Claude and OpenAI models.
 
 ## 🎮 Usage
 
